@@ -26,7 +26,7 @@ package fileview.structure{
 			_structure.sortTypes(); //If files and folders are mixed in same folder, push files to the end
 			setTreeFirstLevelToVisible(); 
 			_structure.precountFilesAndFolders();
-			dispatchEvent(new StructureUpdatedEvent(StructureUpdatedEvent.STRUCTURE_UPDATED, _structure));
+			dispatchUpdated();
 		}
 
 		private function initStructure():AComponent {

@@ -34,8 +34,6 @@ package fileview.view {
 			_counter = new Counter();
 			addChild(_counter);
 			startToCreatButtons(structure);
-			
-			
 		}
 
 		private function startToCreatButtons(rootNode:AComponent):void {

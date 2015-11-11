@@ -38,7 +38,7 @@ package fileview.view.render {
 		
 		//Phys
 		private var maxVelocity:Number = 10;
-		private var velocity:Number = 0;
+		private var velocity:Number = 5;
 		private var mass:Number = Math.max(count * 2, 30); //Total mass of Carousel
 		private var speed:Number = 0;
 		private var friction:Number = .993;
@@ -139,7 +139,7 @@ package fileview.view.render {
 				button.x = globalX;
 				button.y = globalY +  cos  * radius;
 				button.z = globalZ +  sin * radius;
-				button.angle = angle; //Dynamic property
+				button.angle = angle;
 				_container.addChild(button);
 			}
 			sortDepthsAndAddBlur();
